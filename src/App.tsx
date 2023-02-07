@@ -3,6 +3,7 @@ import { useState } from 'react';
 
 // Components
 import ThemeSwitcher from './components/ThemeSwitcher';
+import Display from './components/Display';
 
 type Props = {};
 
@@ -18,6 +19,7 @@ const App = (props: Props) => {
   return (
     <main className={`${themes[theme]} h-screen bg-main px-8 py-9`}>
       <ThemeSwitcher theme={theme} setTheme={setTheme}/>
+      <Display />
     </main>
   );
 };
