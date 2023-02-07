@@ -7,7 +7,7 @@ import ThemeSwitcher from './components/ThemeSwitcher';
 type Props = {};
 
 const App = (props: Props) => {
-  const [theme, setTheme] = useState<number>(3);
+  const [theme, setTheme] = useState<number>(1);
 
   const themes: {[value: number] : string} = {
     1: 'theme-first',
