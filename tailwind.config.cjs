@@ -15,6 +15,7 @@ module.exports = {
         'toggleSh': 'var(--toggleSh)',
         'txtColor': 'var(--txtColor)',
         'txtColorSec': 'var(--txtColorSec)',
+        'txtWhite': 'var(--txtWhite)'
       },
       screens: {
         xl: '1440px',
