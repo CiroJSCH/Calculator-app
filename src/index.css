@@ -41,7 +41,7 @@
 .theme-third {
   --main: hsl(268, 75%, 9%);
   --toggleBg: hsl(268, 71%, 12%);
-  --screen: hsl(281, 89%, 26%);
+  --screen: hsl(268, 71%, 12%);
   --key: hsl(268, 47%, 21%);
   --keySh: hsl(290, 70%, 36%);
   --keySec: hsl(281, 89%, 26%);
