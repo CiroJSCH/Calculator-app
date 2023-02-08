@@ -1,19 +1,28 @@
-type Props = {
-  theme: number;
-  setTheme: (value: number) => void;
-};
+// Libraries
+import { useContext } from 'react';
 
-const ThemeSwitcher = ({ theme, setTheme }: Props) => {
+// Context
+import {
+  ThemeContext,
+  ThemeContextType,
+  ThemeType,
+} from '../context/ThemeContext';
+
+const ThemeSwitcher = () => {
+  const { theme, setTheme } = useContext(ThemeContext) as ThemeContextType;
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) =>
-    setTheme(Number(e.target.value));
+    setTheme(Number(e.target.value) as ThemeType);
 
   return (
-    <div className={`flex items-center justify-between ${theme === 1 ? "text-txtWhite" : "text-txtColor"}`}>
+    <div
+      className={`flex items-center justify-between ${
+        theme === (1 as ThemeType) ? 'text-txtWhite' : 'text-txtColor'
+      }`}
+    >
       <h1 className='font-bold text-3xl'>calc</h1>
       <div className='flex gap-8 items-center'>
-        <p className='text-[13px] font-bold tracking-[1.2px] mt-6'>
-          THEME
-        </p>
+        <p className='text-[13px] font-bold tracking-[1.2px] mt-6'>THEME</p>
         <div className='flex flex-col w-[75px] items-center '>
           <div className='flex -top-6 justify-between font-bold text-[13px] w-[80%]'>
             <p>1</p>

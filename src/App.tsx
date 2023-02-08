@@ -1,15 +1,16 @@
 // Libraries
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 
 // Components
 import ThemeSwitcher from './components/ThemeSwitcher';
 import Display from './components/Display';
 import Keypad from './components/Keypad';
 
-type Props = {};
+// Context
+import { ThemeContext, ThemeContextType } from './context/ThemeContext';
 
-const App = (props: Props) => {
-  const [theme, setTheme] = useState<number>(1);
+const App = () => {
+  const { theme } = useContext(ThemeContext) as ThemeContextType;
 
   const themes: { [value: number]: string } = {
     1: 'theme-first',
@@ -18,11 +19,13 @@ const App = (props: Props) => {
   };
 
   return (
-    <main className={`${themes[theme]} h-screen bg-main px-8 py-9 flex justify-center items-center`}>
+    <main
+      className={`${themes[theme]} h-screen bg-main px-8 py-9 flex justify-center items-center`}
+    >
       <div className='w-full max-w-[500px]'>
-        <ThemeSwitcher theme={theme} setTheme={setTheme} />
-        <Display theme={theme} />
-        <Keypad theme={theme}/>
+        <ThemeSwitcher />
+        <Display />
+        <Keypad />
       </div>
     </main>
   );
