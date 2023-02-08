@@ -14,25 +14,25 @@
   --screen: hsl(224, 36%, 15%);
   --key: hsl(30, 25%, 89%);
   --keySh: hsl(28, 16%, 65%);
-  --keySec: hsl(223, 31%, 20%);
-  --keySecSh: hsl(224, 36%, 15%);
+  --keySec: hsl(225, 21%, 49%);
+  --keySecSh: hsl(224, 28%, 35%);
   --toggle: hsl(6, 63%, 50%);
   --toggleSh: hsl(6, 70%, 34%);
-  --txtColor: hsl(0, 0%, 100%);
+  --txtColor: hsl(221, 14%, 31%);
   --txtColorSec: hsl(198, 20%, 13%);
-  --txtWhite: hsl(221, 14%, 31%);
+  --txtWhite: hsl(0, 0%, 100%);
 }
 
 .theme-second {
   --main: hsl(0, 0%, 90%);
   --toggleBg: hsl(0, 5%, 81%);
   --screen: hsl(0, 0%, 93%);
-  --key: hsl(185, 42%, 37%);
-  --keySh: hsl(185, 58%, 25%);
-  --keySec: hsl(45, 7%, 89%);
-  --keySecSh: hsl(35, 11%, 61%);
-  --toggle: hsl(25, 99%, 27%);
-  --toggleSh: hsl(6, 70%, 34%);
+  --key: hsl(45, 7%, 89%);
+  --keySh: hsl(35, 11%, 61%);
+  --keySec: hsl(185, 42%, 37%);
+  --keySecSh: hsl(185, 58%, 25%);
+  --toggle: hsl(25, 98%, 40%);
+  --toggleSh: hsl(25, 99%, 27%);
   --txtColor: hsl(60, 10%, 19%);
   --txtColorSec: hsl(198, 20%, 13%);
   --txtWhite: hsl(0, 0%, 100%);
