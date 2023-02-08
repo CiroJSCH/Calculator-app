@@ -8,14 +8,14 @@ const ThemeSwitcher = ({ theme, setTheme }: Props) => {
     setTheme(Number(e.target.value));
 
   return (
-    <div className='flex items-center justify-between'>
-      <h1 className='text-txtColor font-bold text-3xl'>calc</h1>
+    <div className={`flex items-center justify-between ${theme === 1 ? "text-txtWhite" : "text-txtColor"}`}>
+      <h1 className='font-bold text-3xl'>calc</h1>
       <div className='flex gap-8 items-center'>
-        <p className='text-txtColor text-[13px] font-bold tracking-[1.2px] mt-6'>
+        <p className='text-[13px] font-bold tracking-[1.2px] mt-6'>
           THEME
         </p>
         <div className='flex flex-col w-[75px] items-center '>
-          <div className='flex -top-6 justify-between text-txtColor font-bold text-[13px] w-[80%]'>
+          <div className='flex -top-6 justify-between font-bold text-[13px] w-[80%]'>
             <p>1</p>
             <p>2</p>
             <p>3</p>
