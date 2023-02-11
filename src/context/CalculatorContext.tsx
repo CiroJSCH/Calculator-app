@@ -91,15 +91,15 @@ const CalculatorContextProvider = ({ children }: Props) => {
   };
 
   const calculate = (operation: string) => {
-    let numbers: Array<string> = operation.split(/[\+\-x/]/g);
+    const numbers: Array<string> = operation
+      .split(/[\+\-x/]/g)
+      .map((number) => {
+        if (number === '') return '0';
+        else return number;
+      });
     const operators: Array<string> = operation
       .replace(/[0-9\.]+/g, '')
       .split('');
-
-    numbers = numbers.map((number) => {
-      if (number === '') return '0';
-      else return number;
-    });
 
     for (let operator in operators) {
       if (operators[operator] === 'x' || operators[operator] === '/') {
@@ -133,7 +133,7 @@ const CalculatorContextProvider = ({ children }: Props) => {
     if (finalResult === 'Infinity' || finalResult === '-Infinity') {
       setResult('Math error');
       setOperation('');
-    } else if (finalResult === '0.00' || finalResult === "0") {
+    } else if (finalResult === '0.00' || finalResult === '0') {
       setResult('0');
       setOperation('');
     } else {
