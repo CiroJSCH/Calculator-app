@@ -10,7 +10,7 @@ module.exports = {
         'key': 'var(--key)',
         'keySh': 'var(--keySh)',
         'keySec': 'var(--keySec)',
-        'keySecSh': 'var(keySecSh)',
+        'keySecSh': 'var(--keySecSh)',
         'toggle': 'var(--toggle)',
         'toggleSh': 'var(--toggleSh)',
         'txtColor': 'var(--txtColor)',
