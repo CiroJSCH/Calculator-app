@@ -17,7 +17,7 @@ type Props = {
 
 const Key = ({ item }: Props) => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
-  const { operation, setOperation, del, reset, calculate, setResult, addToOperation } =
+  const { operation, del, reset, calculate,addToOperation } =
     useContext(CalculatorContext) as CalculatorContextType;
 
   const keyStyles = `${item.color} ${item.shadow} ${
