@@ -10,9 +10,9 @@ const Display = () => {
   const { result, operation } = useContext(CalculatorContext) as CalculatorContextType;
 
   return (
-    <div className='w-full h-auto bg-screen rounded-lg mt-8 px-6 py-4 flex items-center justify-end'>
+    <div className='w-full h-auto bg-screen rounded-lg mt-8 px-6 py-5 flex items-center justify-end'>
       <span
-        className={`text-[40px] text-txtColor font-bold overflow-x-scroll scrollbar-thin scrollbar-thumb-keySecSh ${
+        className={`text-[45px] text-txtColor font-bold overflow-x-scroll scrollbar-thin scrollbar-thumb-keySecSh ${
           theme === 1 as ThemeType  ? 'text-txtWhite' : 'text-txtColor'
         }`}
       >
