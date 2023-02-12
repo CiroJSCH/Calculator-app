@@ -31,7 +31,7 @@ const ThemeSwitcher = () => {
           </div>
           <input
             type='range'
-            name="theme-switch"
+            id="theme-switch"
             className='w-full slider'
             min={1}
             max={3}
