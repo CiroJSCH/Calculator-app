@@ -22,13 +22,13 @@ const ThemeSwitcher = () => {
     >
       <h1 className='font-bold text-3xl'>calc</h1>
       <div className='flex gap-8 items-center'>
-        <p className='text-[13px] font-bold tracking-[1.2px] mt-6'>THEME</p>
+        <label className='text-[13px] font-bold tracking-[1.2px] mt-6' htmlFor='theme-switch'>THEME</label>
         <div className='flex flex-col w-[75px] items-center '>
-          <label className='flex -top-6 justify-between font-bold text-[13px] w-[80%]' htmlFor='theme-switch'>
+          <div className='flex -top-6 justify-between font-bold text-[13px] w-[80%]'>
             <p>1</p>
             <p>2</p>
             <p>3</p>
-          </label>
+          </div>
           <input
             type='range'
             name="theme-switch"
